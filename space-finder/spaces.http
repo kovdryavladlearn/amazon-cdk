@@ -1,0 +1,32 @@
+@url = https://uio9dth9ef.execute-api.eu-north-1.amazonaws.com/prod/
+@token = eyJraWQiOiJtblRhbVg3T3E5d3JBMko0WnJROHI3Y1pvdlNnVDN4NUg1UGJtTEtXZkY4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxMGJjYzk5Yy04MGExLTcwYTMtYmIxZC1iMjkzYTZkODdmMTgiLCJjb2duaXRvOmdyb3VwcyI6WyJhZG1pbnMiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LW5vcnRoLTEuYW1hem9uYXdzLmNvbVwvZXUtbm9ydGgtMV9rYkxWNFlPVHIiLCJjb2duaXRvOnVzZXJuYW1lIjoidXNlciIsIm9yaWdpbl9qdGkiOiJhMjQ2MTIwNi01NTJjLTQ0NmMtOGE1MC1mMGQzM2JlNzg2YjUiLCJjb2duaXRvOnJvbGVzIjpbImFybjphd3M6aWFtOjoxMzU4MDg5NjE0MDA6cm9sZVwvQXV0aFN0YWNrLUNvZ25pdG9BZG1pblJvbGU0QzEwRkJBNC1SdUdkbmxNWm4wem0iXSwiYXVkIjoiNW9mbHI3ZjA0aDdkcTUzdjZuN2lkNXM4NHYiLCJldmVudF9pZCI6Ijc3MzE3ODcxLWU1YWYtNGVhZS05MGRmLTJkYjYzY2RiZjA2ZSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzQxMDI4ODY4LCJleHAiOjE3NDEwMzI0NjgsImlhdCI6MTc0MTAyODg2OCwianRpIjoiZTFkMzI5MTktMTdkMS00MzZjLTlmZDQtMjBkZTE4MjEyODY2IiwiZW1haWwiOiJ1c2VyQGNvbS51YSJ9.HomBmAMpGKsNGmtA9qG4KBiq1uV07LC-MFwXfII5mGBX2AybhQecStFu7da-7NipCDtdLJZBFXCkatvMpUrNjd_Od9MJuC6XCFfVMdNgLXcMq3twOWCHQ3CuUNS5idM0Frr5aw_QR2mwTKd7BNdg4TFpOeUgG92zns9B3GtxrwTWOiMhV54XyoWpSgPf8UpNy8YTHcTLxXdy4gvOdy5Nqmv-JMGoee-X2CNc4EeUs8nrWiHA7RA3QE4dcWwbHv8oAbvjWQQeIk4AFUUw-DWB9-rqbhQuWNdiKcTY7LBId3iPN1uV9huacUT0SUnXL4BswUwGl0G4fCTPi2R7apxRBw
+
+GET {{url}}spaces
+Authorization: {{token}}
+###
+
+POST https://uio9dth9ef.execute-api.eu-north-1.amazonaws.com/prod/spaces
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+    "location": "Abu Dabi2",
+    "name": "Location with new id fuction"
+}
+###
+
+GET https://uio9dth9ef.execute-api.eu-north-1.amazonaws.com/prod/spaces?id=ebda8e47-fef5-4b79-ad39-77bab195a198
+###
+
+DELETE {{url}}spaces?id=ebda8e47-fef5-4b79-ad39-77bab195a198
+Authorization: {{token}}
+###
+
+
+PUT https://uio9dth9ef.execute-api.eu-north-1.amazonaws.com/prod/spaces?id=df2896be-0788-41b0-981b-0fc85e4cf5f0
+Content-Type: application/json
+
+{
+    "name": "Best location 2"
+}
+###
